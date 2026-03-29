@@ -10,6 +10,7 @@ def get_connection():
         database=st.secrets["postgres"]["database"],
         user=st.secrets["postgres"]["user"],
         password=st.secrets["postgres"]["password"]
+        port=st.secrets["postgres"]["port"]
     )
 
 st.set_page_config(page_title="Brenali Ops", layout="wide")

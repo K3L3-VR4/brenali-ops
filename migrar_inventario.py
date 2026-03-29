@@ -3,10 +3,11 @@ import psycopg2
 from psycopg2.extras import execute_values
 
 conn = psycopg2.connect(
-    host="localhost",
-    database="brenali_ops",
+    host="nozomi.proxy.rlwy.net",
+    database="railway",
     user="postgres",
-    password="12345678"
+    password="FuuQagrMznDwVlnhKCyDiugkGPXLNACu",
+    port=10465
 )
 cursor = conn.cursor()
 
